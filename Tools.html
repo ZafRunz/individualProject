@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tools </title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" type="text/css" href="tools.css">
+    </head>
+    <body>
+        <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+            <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+            <a href="index.html" class="w3-bar-item w3-button">Main Page</a>
+
+        </div>
+        <div class="w3-teal">
+            <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()"> = </button>
+            <div class="w3-container">
+              <h1>Tools</h1>
+            </div>
+        </div>
+        <script>
+            function w3_open() {
+              document.getElementById("mySidebar").style.display = "block";
+            }
+            
+            function w3_close() {
+              document.getElementById("mySidebar").style.display = "none";
+            }
+            </script>
+            <div>
+            <br>
+            <a href="Calculator.html" target="tools"><button>Calculator</button></a>
+            
+            <a href="BMI Checker.html"  target="tools"><button>BMI Checker</button></a>
+            
+            <a href="Zakat.html"  target="tools"><button>Zakat</button></a>
+            
+            <a href="Unit Converter.html"  target="tools"><button>Unit Converter</button></a>
+            <br><br>
+          </div>
+            <iframe src="Calculator.html" name="tools" style="width:700px;height:510px;border: 5px solid black;"> </iframe>
+    </body>
+</html>

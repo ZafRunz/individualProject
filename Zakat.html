@@ -1,0 +1,26 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title>Zakat </title>
+        <script> 
+            function Calculate(btn){ 
+                let Income = parseFloat(document.getElementById("incomeBox").value); 
+                let Total = 0; 
+                alert(Income); 
+                if(btn.value=="check") 
+                Total = Income * 0.025; 
+                document.getElementById("result").innerHTML = "Total= RM"+Total.toFixed(2); 
+            } 
+        </script> 
+    </head> 
+    <body> 
+        <h1>Zakat Calculator</h1> 
+        <hr> 
+        <p>Yearly Income: </p> 
+        <input type="number" id="incomeBox"> 
+        <input type="submit" id="checkButton" value="check" onclick="Calculate(this)"> 
+        <p>Zakat: 2.5% yearly Income</p> 
+        <div id="result">
+        </div> 
+    </body> 
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Personal Info </title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+          <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+          <a href="index.html" class="w3-bar-item w3-button">Main Page</a>
+  
+      </div>
+    </head>
+    <body style="background-color: antiquewhite;">
+        <div class="w3-teal">
+            <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()"> = </button>
+            <div class="w3-container">
+              <h1>Personal Information</h1>
+            </div>
+        </div>
+        <div style="padding-left: 20px;">
+        <h3><strong> About Me</strong></h3>
+        <p><b>Matric :</b> A22DW1012</p>
+        <p><b>Program and Section: </b> DDWD 39</p>
+        <p><b>Name : </b> Wan Muhammad Zahin Zafran Bin Wan Azmi</p>
+        <img src="me2.jpg" style="height: 200px; width: 150px; border-radius: 20px;">
+        <br>
+        <br><a href="CV.html" ><button>My CV</button></a>
+        <a href="CV.pdf" download="CV Zahin.pdf"><button>Download CV in PDF</button>
+      </div>
+        <script>
+            function w3_open() {
+              document.getElementById("mySidebar").style.display = "block";
+            }
+            
+            function w3_close() {
+              document.getElementById("mySidebar").style.display = "none";
+            }
+            </script>
+    </body>
+</html>

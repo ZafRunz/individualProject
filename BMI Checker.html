@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" type="text/css" href="bmi.css">
+    <script>
+        function calculateBMI() {
+            var weight = parseFloat(document.getElementById("weight").value);
+            var height = parseFloat(document.getElementById("height").value);
+            var bmi = weight / Math.pow(height, 2);
+            var status = "";
+            var colorClass = "";
+
+            if (bmi < 18.4) {
+                status = "Underweight";
+                colorClass = "underweight";
+                
+            } else if (bmi < 24.9) {
+                status = "Normal";
+                colorClass = "normal";
+            } else if  (bmi < 29.9) {
+                status = "Overweight";
+                colorClass = "overweight";
+            } else if (bmi < 39.9 ){
+                status = "Obese";
+                colorClass = "obese";
+            } else {
+                status = "Extremely Obese";
+                colorClass = "EO";
+            }
+            alert("Your BMI is: " + bmi.toFixed(2));
+            document.getElementById("bmi").textContent = bmi.toFixed(2);
+            document.getElementById("status").textContent = status;
+            document.getElementById("status").className = colorClass;
+        }
+    </script>
+</head>
+<body>
+    <h1>BMI Calculator</h1>
+    <label for="weight">Enter your weight (kg):</label>
+    <input type="text" id="weight"><br><br>
+    
+    <label for="height">Enter your height (m):</label>
+    <input type="text" id="height"><br><br>
+    
+    <button onclick="calculateBMI()">Calculate BMI</button><br><br>
+    
+    <p><strong>BMI:</strong> <span id="bmi"></span></p>
+    <p><strong>Status:</strong> <span id="status"></span></p>
+</body>
+</html>

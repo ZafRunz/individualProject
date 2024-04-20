@@ -1,0 +1,20 @@
+.underweight {
+    background-color: blue;
+    color: white;
+}
+.normal {
+    background-color: green;
+    color: white;
+}
+.overweight {
+    background-color: yellow;
+    color: black;
+}
+.obese {
+    background-color: orange;
+   
+}
+.EO {
+    background-color: red;
+    
+}
